@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+using namespace std;
+int main() 
+{
+    int x;
+    cin>>x;
+    while (x--) 
+    {
+       string a;
+       cin >> a;
+       transform(a.begin(), a.end(), a.begin(), ::tolower);
+        if(a=="yes") 
+        {
+          cout<<"YES"<<endl;
+        } 
+        else 
+        {
+          cout<<"NO"<<endl;
+        }
+    }
+
+    return 0;
+}
