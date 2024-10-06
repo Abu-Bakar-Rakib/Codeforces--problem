@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+int find(int a);
+int main() 
+{
+    int t;
+    cin>>t;
+    while(t--) 
+    {
+        int a;
+        cin>>a;
+        cout<<find(a)<<endl;
+    }
+    return 0;
+}
+int find(int a) 
+{
+    int count= 0;
+    for(int i=1; ;i++)  
+    {
+        if(i % 3 != 0 && i % 10 != 3) 
+        {
+            count++;
+        }
+        if(count == a) 
+        {
+            return i;
+        }
+    }
+}
