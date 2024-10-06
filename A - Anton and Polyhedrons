@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int n;
+    cin>>n;
+    int total=0;
+    for(int i=0;i<n;++i) 
+    {
+        string p;
+        cin>>p;
+        if(p =="Tetrahedron") 
+        {
+            total = total + 4;
+        } 
+        else if(p =="Cube") 
+        {
+            total = total + 6;
+        } 
+        else if(p =="Octahedron") 
+        {
+            total = total + 8;
+        }                                 //love yourself/
+        else if(p =="Dodecahedron") 
+        {
+            total = total + 12;
+        } 
+        else if(p =="Icosahedron") 
+        {
+            total = total + 20;
+        }
+    }
+                    cout<<total<<endl;
+                       return 0;
+}
