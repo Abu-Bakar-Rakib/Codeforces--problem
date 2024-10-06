@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int n,k,l,c,d,p,nl,np;
+    cin>>n>>k>>l>>c>>d>>p>>nl>>np;
+    int dt = (k * l)/ nl;
+    int lt = c*d;
+    int st = p/np;
+    int toasts = min(dt, min(lt, st)) / n;
+    cout<<toasts<<endl;
+    return 0;
+}
+
