@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+#include<algorithm>
+#include<string>
+using namespace std;
+int main() 
+{
+    string n;
+    cin>>n;
+    sort(n.begin(),n.end());
+    int luck=0;
+    for(int i=0;i<n.size();i++)
+    {
+        if(n[i]=='7' || n[i]=='4')
+        {
+            luck++;
+        }
+    }
+    if(luck==4 || luck==7)
+    {
+        cout<<"YES"<<endl;
+    }
+    else
+    {
+        cout<<"NO"<<endl;
+    }
+    return 0;
+}
