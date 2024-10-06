@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int n;
+    cin>>n;
+    int mini = 0,pass = 0;
+    for(int i=0;i<n;i++)
+    {
+        int x, y;
+        cin>>x>>y;
+        pass = pass - x+y;
+        mini = max(mini, pass);
+    }
+
+    cout<<mini<<endl;
+    return 0;
+}
