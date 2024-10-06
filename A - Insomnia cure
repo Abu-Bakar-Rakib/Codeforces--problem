@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int k,l,m,n,d;
+    cin>>k>>l>>m>>n>>d;
+    int c=0;
+    for(int dd=1;dd<=d;dd++)
+    {
+        if(dd%k==0 || dd%l==0 || dd%m==0 || dd%n==0)
+        {
+
+            c++;
+        }
+    }
+    cout<<c<<endl;
+    return 0;
+}
