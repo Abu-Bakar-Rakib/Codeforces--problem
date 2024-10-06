@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    int n;
+    cin>>n;
+    int b[5] ={100,20,10,5,1};
+    int ab=0,i=0;
+    while(n>0)                
+    {
+        ab += n / b[i];
+        n %= b[i];
+        i++;
+    }
+    cout<<ab<<endl;
+    return 0;
+}
