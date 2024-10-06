@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+#include <cmath>
+using namespace std;
+int main() 
+{
+    int t;
+    cin>>t;
+    while(t--) 
+    {
+        int a,b;
+        cin>>a>>b;
+        int subs = abs(a - b);
+        int moves = (subs + 9) / 10;
+        cout<<moves<<endl;
+    }
+    return 0;
+}
