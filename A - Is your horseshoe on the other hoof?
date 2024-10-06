@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>  //Bismillah//
+#include<set>
+using namespace std;
+int main() 
+{
+    int n;
+    set<int> ab;
+    for(int i=0;i<4;i++)  
+    {
+        cin>>n;
+        ab.insert(n);    
+    }
+    cout<<(4-ab.size())<<endl;
+    return 0;
+}
+
