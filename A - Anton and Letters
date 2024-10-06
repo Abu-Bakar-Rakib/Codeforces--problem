@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+#include <set>
+using namespace std;
+int main() 
+{
+    string s;
+    getline(cin, s);
+    set<char>ab;
+    for(int i=0;i<s.size();i++) 
+    {
+        if(isalpha(s[i]))    
+        {
+            ab.insert(s[i]);
+        }
+    }
+    cout<<ab.size()<<endl;
+    return 0;
+}
