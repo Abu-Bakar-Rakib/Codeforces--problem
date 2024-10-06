@@ -1,0 +1,6 @@
+t=int(input())
+for _ in range(t):
+   a,b = input().split()
+   aa = b[0] + a[1:]
+   bb= a[0] + b[1:]
+   print(aa,bb)
