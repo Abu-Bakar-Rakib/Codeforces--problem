@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    bool baby=false;
+    for(int i=0;i<a;i++)
+    {
+        int ab;
+        cin>>ab;
+        if(ab==1)
+        {
+            baby=true;
+            break;
+        }
+    }
+    if(baby)
+    {
+        cout<<"HARD"<<endl;
+    }
+    else
+    {
+        cout<<"EASY"<<endl;
+    }
+    return 0;
+}
