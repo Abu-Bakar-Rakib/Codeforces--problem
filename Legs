@@ -1,0 +1,7 @@
+t= int(input())
+for _ in range(t):
+    legs=int(input())
+    if legs%4==0:
+        print(legs//4)
+    else:
+        print(legs//4+1)
