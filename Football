@@ -1,0 +1,5 @@
+play = input()
+if '0000000' in play or '1111111'in play:
+    print("YES")
+else:
+    print("NO")
