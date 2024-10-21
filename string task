@@ -1,0 +1,7 @@
+ab = input()
+vowels = "AEIOUYaeiouy"
+result = ""
+for char in ab:
+        if char not in vowels:
+            result += '.' + char.lower()
+print(result)
